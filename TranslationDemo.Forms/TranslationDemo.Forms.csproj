@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+        <AssemblyName>TranslationDemo</AssemblyName>
+        <ApplicationIcon>icon.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Nett" Version="0.15.0" />
+        <PackageReference Include="Sixam.CST" Version="1.1.100" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="$(SolutionDir)uitext\**" Exclude="$(SolutionDir)uitext\.git" CopyToOutputDirectory="PreserveNewest" LinkBase="uitext\" />
+    </ItemGroup>
+
+</Project>

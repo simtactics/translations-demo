@@ -1,0 +1,3 @@
+[submodule "uitext"]
+	path = uitext
+	url = https://github.com/simtactics/tsotranslation
